@@ -1,0 +1,12 @@
+<script>
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      // Send location to your server or display it
+      console.log("Latitude:", position.coords.latitude);
+      console.log("Longitude:", position.coords.longitude);
+    },
+    (error) => {
+      console.error("Location access denied:", error.message);
+    }
+  );
+</script>
